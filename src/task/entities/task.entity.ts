@@ -19,22 +19,22 @@ export class TaskEntity {
   name: string;
 
   @Field(() => String)
-  @Column('date', { nullable: true })
+  @Column('date')
   date: Date;
 
-  @Field(() => String)
-  @Column('timestamp', { nullable: true })
+  @Field(() => String, { nullable: true })
+  @Column('time', { nullable: true })
   time?: Date;
 
   @Field(() => Boolean, { nullable: true })
-  @Column()
+  @Column({ nullable: true })
   done?: boolean;
 
-  @Field(() => String)
+  @Field(() => String, { nullable: true })
   @Column('varchar', { nullable: true })
   priority?: PriorityType;
 
-  @Field(() => [String])
+  @Field(() => [String], { nullable: true })
   @Column('varchar', { array: true, nullable: true })
   reminders?: ReminderNameType[];
 }

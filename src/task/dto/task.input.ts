@@ -10,7 +10,7 @@ export class TaskInput {
   @Field()
   readonly name: string;
 
-  @Field(() => String, { nullable: true })
+  @Field(() => String)
   readonly date: Date;
 
   @Field(() => String, { nullable: true })
