@@ -4,6 +4,9 @@
 		* [https://www.postgresql.org/download](https://www.postgresql.org/download)
 		* Or user docker to do it.
 	2. __Create a table__
+        ```
+        createdb whattododb
+        ```
 	
 * Clone the project
 	```
